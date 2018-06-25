@@ -1,0 +1,410 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* web font */
+
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../font/NanumGothic.woff2) format('woff2'),
+  url(../font/NanumGothic.woff) format('woff'),
+  url(../font/NanumGothic.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../font/NanumGothicBold.woff2) format('woff2'),
+  url(../font/NanumGothicBold.woff) format('woff'),
+  url(../font/NanumGothicBold.otf) format('opentype');
+}
+
+
+/* reset */
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+table,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer,
+section,
+article,
+aside,
+nav {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a img {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* common */
+
+#wrapper {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+#wrapper a#skip-nav {
+  position: fixed;
+  left: 0;
+  top: -41px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 100000;
+  transition: top 0.3s;
+}
+
+#wrapper a#skip-nav:focus {
+  top: 0;
+}
+
+/* #main */
+
+#wrapper #main {
+  color: #999;
+}
+
+#wrapper #main .container {
+  width: 1200px;
+  height: 1480px;
+  margin: 0 auto;
+}
+
+#wrapper #main .container .container-toptxt {
+  height: 95px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#wrapper #main .container .container-toptxt>p {
+  margin: 0 0 40px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+#wrapper #main .container .container-toptxt>h2 {
+  float: left;
+  margin: 0 0 30px 10px;
+  font-size: 30px;
+  color: #333;
+}
+
+#wrapper #main .container .container-toptxt ul.breadcrumb {
+  float: right;
+}
+
+#wrapper #main .container .container-toptxt ul.breadcrumb li {
+  display: inline-block;
+  font-size: 18px;
+  color: #999;
+}
+
+#wrapper #main .container .container-toptxt ul.breadcrumb li:first-child {
+  color: #000;
+}
+
+/* #main .container-agreement */
+
+#wrapper #main .container .container-agreement {
+  height: 665px;
+  padding: 40px 70px 0 70px;
+  background-color: #f6f6f6;
+  border-top: 4px solid #000;
+}
+
+#wrapper #main .container .container-agreement h3 {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+#wrapper #main .container .container-agreement h3 span {
+  font-size: 14px;
+  color: #999;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 {
+  padding: 0 0 40px 20px;
+  width: 1020px;
+  height: 275px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul {
+  width: 1020px;
+  overflow: hidden;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li {
+  float: left;
+  width: 450px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li:nth-child(1),
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li:nth-child(1),
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li:nth-child(3) {
+  margin-right: 120px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li a {
+  float: right;
+  width: 140px;
+  height: 48px;
+  padding-left: 5px;
+  border: 1px solid #000;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li a .arrow {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 8px;
+  padding: 0;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border: 10px solid transparent;
+  border-left-color: #000;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li a .arrow:before,
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li a .arrow:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 ul li a .arrow:after {
+  left: -11px;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-left-color: #fff;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 p {
+  width: 1020px;
+  height: 55px;
+  line-height: 55px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 p:nth-of-type(1) {
+  color: #fff;
+  background-color: #dc8b6b;
+  cursor: pointer;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content1 p:nth-of-type(1):hover {
+  background-color: #ef6731;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 {
+  font-size: 12px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form {
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 p:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form p,
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container {
+  float: left;
+  margin-right: 55px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container .checkmark {
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  ;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #dc8b6b;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container:hover input~.checkmark {
+  background-color: #ef6731;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container input:checked~.checkmark {
+  background-color: #dc8b6b;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container input:checked~.checkmark:after {
+  display: block;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form .check-container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f6f6f6;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 form div label {
+  margin-right: 40px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 .btn {
+  margin: 38px 310px 0 310px;
+  width: 580px;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 .btn button {
+  width: 280px;
+  height: 39px;
+  border: 1px solid #000;
+  background-color: #f6f6f6;
+  color: #000;
+  cursor: pointer;
+}
+
+#wrapper #main .container .container-agreement .container-agreement-content2 .btn button:nth-child(1) {
+  width: 280px;
+  height: 40px;
+  margin-right: 15px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
+/* #main container-notice */
+
+#wrapper #main .container-notice {
+  padding: 40px 0 40px 70px;
+  font-size: 14px;
+}
+
+#wrapper #main .container-notice h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+#wrapper #main .container-notice ul {
+  padding: 0 30px;
+}
+
+#wrapper #main .container-notice ul li {
+  margin-bottom: 5px;
+}
+
+#wrapper #main .container-notice ul>li {
+  margin-top: 30px;
+}
+
+#wrapper #main .container-notice ul>li>table {
+  border: 2px solid #ededed;
+}
+
+#wrapper #main .container-notice ul>li table caption {
+  margin: -5px;
+  text-indent: -9999px;
+}
+
+#wrapper #main .container-notice ul>li table tr {
+  height: 25px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+#wrapper #main .container-notice ul>li table tr:first-child {
+  font-size: 14px;
+  background-color: #ededed;
+}
